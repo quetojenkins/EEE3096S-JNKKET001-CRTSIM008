@@ -6,5 +6,6 @@ Includes all Practicals, Demo Code, Design and Course Submissions
 
 
 ## Contributors
-Queto Jenkins
-Simon Carthew
+Queto Jenkins - JNKKET001
+
+Simon Carthew - CRTSIM008
