@@ -51,7 +51,7 @@ uint32_t prev_millis = 0;
 uint32_t curr_millis = 0;
 volatile uint32_t debounce_timer = 0;
 volatile uint8_t debounce_flag = 0;
-uint32_t delay_t = 1000; // Initialise delay to 500ms
+uint32_t delay_t = 500; // Initialise delay to 500ms
 uint32_t adc_val;
 /* USER CODE END PV */
 
@@ -371,13 +371,13 @@ void EXTI0_1_IRQHandler(void)
     if (LL_EXTI_IsActiveFlag_0_31(LL_EXTI_LINE_0) && !debounce_flag)
     {
         // Toggle LED7 delay frequency
-        if (delay_t == 1000)
+        if (delay_t == 250)
         {
             delay_t = 500;
         }
         else
         {
-            delay_t = 1000;
+            delay_t = 250;
         }
 
         // Set debounce flag to prevent further button presses
